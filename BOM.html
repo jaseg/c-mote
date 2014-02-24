@@ -371,28 +371,20 @@ ul.auto-toc {
 <td><a class="reference external" href="http://www.taydaelectronics.com/capacitors/smd-ceramic-chip-capacitors/0805/22pf-50v-smd-ceramic-chip-capacitor.html">Tayda</a></td>
 </tr>
 <tr><td>1</td>
-<td>RGB LED as status indicator</td>
-<td><a class="reference external" href="http://www.taydaelectronics.com/leds/round-leds/5mm-leds/rgb-leds/rgb-led-5mm-common-cathode.html">Tayda</a></td>
+<td>Bootstrap resistor for photo resistor, 10k 0805</td>
+<td><a class="reference external" href="http://www.taydaelectronics.com/resistors/smd-chip-resistors/0805/50-x-smd-chip-resistors-10k-ohm-1-8w-1-0805.html">Tayda</a></td>
 </tr>
 <tr><td>1</td>
-<td>Bootstrap resistor for photo resistor</td>
-<td>&nbsp;</td>
-</tr>
-<tr><td>1</td>
-<td>Buffer cap for entire circuit</td>
-<td>&nbsp;</td>
+<td>Buffer cap for entire circuit, 4.7µ electrolytic 2.54mm leads</td>
+<td><a class="reference external" href="http://www.taydaelectronics.com/capacitors/electrolytic-capacitors/4-7uf-16v-105c-radial-electrolytic-capacitor-5x11mm.html">Tayda</a></td>
 </tr>
 <tr><td>1</td>
 <td>4pin terminal for bus/VCC connection</td>
-<td>&nbsp;</td>
+<td><a class="reference external" href="http://www.conrad.de/ce/de/product/567658/Loetbare-Schraubklemme-mit-Liftprinzip-AKZ692-V-Rastermass-254-mm-Polzahl-4-Gruen-50692040021E-Inhalt-1-St?ref=list">Conrad</a></td>
 </tr>
 <tr><td>1</td>
 <td>5pin terminal for contact connection (GND/VCC/IO1-3)</td>
-<td>&nbsp;</td>
-</tr>
-<tr><td>3</td>
-<td>Current limiting resistors for RGB LED</td>
-<td>&nbsp;</td>
+<td><a class="reference external" href="http://www.conrad.de/ce/de/product/567698/Loetbare-Schraubklemme-mit-Liftprinzip-AKZ692-V-Rastermass-254-mm-Polzahl-5-Gruen-50692050021E-Inhalt-1-St?ref=list">Conrad</a></td>
 </tr>
 <tr><td>1</td>
 <td>PCB &lt;5*5cm</td>
@@ -400,6 +392,82 @@ ul.auto-toc {
 </tr>
 </tbody>
 </table>
+<div class="section" id="indicator-option-1-rgb-led">
+<h1>Indicator option 1: RGB LED</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="54%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">#</th>
+<th class="head">What</th>
+<th class="head">Sources</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>1</td>
+<td>RGB LED as status indicator</td>
+<td><a class="reference external" href="http://www.taydaelectronics.com/leds/round-leds/5mm-leds/rgb-leds/rgb-led-5mm-common-cathode.html">Tayda</a></td>
+</tr>
+<tr><td>1</td>
+<td>Cur. limit resistor for RGB LED, 0805, 150Ω (R)</td>
+<td><a class="reference external" href="http://www.taydaelectronics.com/resistors/smd-chip-resistors/0805/50-x-smd-chip-resistors-100-ohm-1-8w-1-0805.html">Tayda</a></td>
+</tr>
+<tr><td>2</td>
+<td>Cur. limit resistor for RGB LED, 0805, 100Ω (G/B)</td>
+<td><a class="reference external" href="http://www.taydaelectronics.com/resistors/smd-chip-resistors/0805/50-x-smd-chip-resistors-150-ohm-1-8w-1-0805.html">Tayda</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="indicator-option-2-red-8-8-led-dot-matrix-32-32mm">
+<h1>Indicator option 2: Red 8*8 LED dot matrix (32*32mm)</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="54%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">#</th>
+<th class="head">What</th>
+<th class="head">Sources</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>1</td>
+<td>Red 8*8 32*32mm LED dot matrix</td>
+<td><a class="reference external" href="http://www.taydaelectronics.com/led-displays/dot-matrix/8x8-dot-matrix-led-display-red-3mm-common-cathode.html">Tayda</a></td>
+</tr>
+<tr><td>1</td>
+<td>7-ch NPN darlington array ULN2003APG</td>
+<td><a class="reference external" href="http://www.taydaelectronics.com/ic-integrated-circuits/transistor-arrays/uln2003apg-uln2003-array-7-npn-darlingtons-ic.html">Tayda</a></td>
+</tr>
+<tr><td>2</td>
+<td>8bit shift register w/ output latches</td>
+<td><a class="reference external" href="http://www.taydaelectronics.com/ic-integrated-circuits/74-series/74hc-series/74hc595-8-bit-shift-register-ic.html">Tayda</a></td>
+</tr>
+<tr><td>1</td>
+<td>NPN darlington transistor 2N5306</td>
+<td><a class="reference external" href="http://www.taydaelectronics.com/t-transistors/2n-series/2n5306-npn-darlington-transistor.html">Tayda</a></td>
+</tr>
+<tr><td>1</td>
+<td>Transistor base resistor 0805 330K</td>
+<td><a class="reference external" href="http://www.taydaelectronics.com/resistors/smd-chip-resistors/0805/50-x-smd-chip-resistors-330k-ohm-1-8w-1-0805.html">Tayda</a></td>
+</tr>
+<tr><td>8</td>
+<td>LED current limit resistors 0805 100Ω</td>
+<td><a class="reference external" href="http://www.taydaelectronics.com/resistors/smd-chip-resistors/0805/50-x-smd-chip-resistors-100-ohm-1-8w-1-0805.html">Tayda</a></td>
+</tr>
+<tr><td>0</td>
+<td>Alternative high current shift register</td>
+<td><a class="reference external" href="http://www.digikey.com/product-search/en?x=0&amp;y=0&amp;lang=en&amp;site=us&amp;KeyWords=TPIC6B595">Digikey</a></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="section" id="sensors">
 <h1>Sensors</h1>
 <table border="1" class="docutils">
@@ -417,7 +485,7 @@ ul.auto-toc {
 <tbody valign="top">
 <tr><td>1</td>
 <td>Photoresistor</td>
-<td><a class="reference external" href="http://www.taydaelectronics.com/sensors-transducer/optical-sensor/photo-conductive-cell-resistor-ldr-650nm-radial-ke-10720.htmlPhotoresistor">Tayda</a></td>
+<td><a class="reference external" href="http://www.taydaelectronics.com/sensors-transducer/optical-sensor/photo-conductive-cell-resistor-ldr-650nm-radial-ke-10720.html">Tayda</a></td>
 </tr>
 <tr><td>1</td>
 <td>Digital temperature sensor</td>
@@ -425,7 +493,7 @@ ul.auto-toc {
 </tr>
 <tr><td>1</td>
 <td>PIR (motion sensor) module</td>
-<td><a class="reference external" href="aliex1">Aliexpress</a></td>
+<td><a class="reference external" href="http://www.aliexpress.com/item/Free-Shipping-HC-SR501-Adjust-Infrared-IR-Pyroelectric-Infrared-PIR-module-Motion-Sensor-Detector-Module-We/1564561530.html">Aliexpress</a></td>
 </tr>
 </tbody>
 </table>
