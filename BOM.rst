@@ -40,6 +40,8 @@ Indicator option 1: RGB LED
 .. _tayda12: http://www.taydaelectronics.com/resistors/smd-chip-resistors/0805/50-x-smd-chip-resistors-100-ohm-1-8w-1-0805.html 
 .. _tayda13: http://www.taydaelectronics.com/resistors/smd-chip-resistors/0805/50-x-smd-chip-resistors-150-ohm-1-8w-1-0805.html
 
+Totals 0.30USD
+
 Indicator option 2: Red 8*8 LED dot matrix (32*32mm)
 ----------------------------------------------------
 
@@ -62,6 +64,8 @@ Indicator option 2: Red 8*8 LED dot matrix (32*32mm)
 .. _tayda18: http://www.taydaelectronics.com/resistors/smd-chip-resistors/0805/50-x-smd-chip-resistors-330k-ohm-1-8w-1-0805.html
 .. _tayda19: http://www.taydaelectronics.com/resistors/smd-chip-resistors/0805/50-x-smd-chip-resistors-100-ohm-1-8w-1-0805.html
 .. _digikey1: http://www.digikey.com/product-search/en?x=0&y=0&lang=en&site=us&KeyWords=TPIC6B595
+
+Totals 2.40USD
 
 Sensors
 -------
@@ -88,6 +92,7 @@ Loudness sensor? → Microphone+amp+envelope detector
 ==  ==========================  ========================================
 1   Electret microphone         `Tayda <tayda8_>`__
 1   Dual Op-Amp                 `Tayda <tayda9_>`__
+*   Passives (TODO)
 ==  ==========================  ========================================
 
 .. _tayda8:  http://www.taydaelectronics.com/microphones/condenser-microphone-2-2k-ohm-1-5v.html
