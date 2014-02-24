@@ -41,7 +41,7 @@ Sensors
 
 Loudness sensor subsystem
 -------------------------
-*Note:* The Op-Amp used in this subsystem is a dual type, so we need only one half of it. The other half is available for other uses.
+**Note:** The Op-Amp used in this subsystem is a dual type, so we need only one half of it. The other half is available for other uses.
 Loudness sensor? → Microphone+amp+envelope detector
 
 ==  ==========================  ========================================
