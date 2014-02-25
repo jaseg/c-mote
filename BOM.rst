@@ -42,7 +42,7 @@ Indicator option 1: RGB LED
 \   **Total**                                                                                                   0.30$
 ==  ==============================================================  ======================================  =========
 
-.. _tayda5: http://www.taydaelectronics.com/leds/round-leds/5mm-leds/rgb-leds/rgb-led-5mm-common-cathode.html
+.. _tayda5:  http://www.taydaelectronics.com/leds/round-leds/5mm-leds/rgb-leds/rgb-led-5mm-common-cathode.html
 .. _tayda12: http://www.taydaelectronics.com/resistors/smd-chip-resistors/0805/50-x-smd-chip-resistors-100-ohm-1-8w-1-0805.html 
 .. _tayda13: http://www.taydaelectronics.com/resistors/smd-chip-resistors/0805/50-x-smd-chip-resistors-150-ohm-1-8w-1-0805.html
 
@@ -86,7 +86,7 @@ Sensors
 0.3333  Oxygen sensor Envitec OOA101-1 (compatible; 3yr lifetime)       `Aliexpress <aliex4_>`__                    7.07$
 0.3333  Passives for oxygen sensor                                                                                  0.05$
 0.3333  3.5mm headphone plug for oxygen sensor                          `Tayda <tayda21_>`__                        0.16$
-0.5     Humidity sensor DHT22 (*replaces temp. sensor*)                 `Aliexpress <aliex5_>`__                    3.95$
+0.5     Humidity sensor DHT22 (**replaces temp. sensor**)               `Aliexpress <aliex5_>`__                    3.95$
 \       **Total**                                                                                                   8.16$
 ======  ==============================================================  ======================================  =========
 
