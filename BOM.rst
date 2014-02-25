@@ -87,6 +87,7 @@ Sensors
 0.3333  Passives for oxygen sensor                                                                                  0.05$
 0.3333  3.5mm headphone plug for oxygen sensor                          `Tayda <tayda21_>`__                        0.16$
 0.5     Humidity sensor DHT22 (**replaces temp. sensor**)               `Aliexpress <aliex5_>`__                    3.95$
+0       Air pressure sensor BMP085                                      `Aliexpress <aliex6_>`__                    2.19$
 \       **Total**                                                                                                   8.28$
 ======  ==============================================================  ======================================  =========
 
@@ -99,6 +100,7 @@ Sensors
 .. _aliex3:  http://www.aliexpress.com/item/UK-Alphasense-alpha-O2-A2-oxygen-sensor-O2-A2/1613147048.html
 .. _aliex4:  http://www.aliexpress.com/item/Envitec-oxygen-battery-oxygen-probe-ooa101-ooa101-1/1000408054.html
 .. _aliex5:  http://www.aliexpress.com/item/10PCS-LOT-DHT22-AM2302-Digital-Temperature-and-Humidity-Sensor-DHT22-Free-shiping/1514942254.html
+.. _aliex6:  http://www.aliexpress.com/item/Free-Shipping-10pcs-New-BMP085-Digital-Pressure-Sensor-module/1640086463.html
 
 Loudness sensor subsystem
 -------------------------
