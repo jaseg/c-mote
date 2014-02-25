@@ -1,6 +1,8 @@
 BOM
 ===
 
+**Note:** In the following table, the brutto prices two conrad parts have been converted to USD for summation convenience.
+
 ==  ==============================================================  ======================================  =========
 #   What                                                            Sources                                 Price/ea.
 ==  ==============================================================  ======================================  =========
@@ -10,10 +12,10 @@ BOM
 1   Load caps for crystal oscillator, 22pF 0805 cer.                `Tayda <tayda4_>`__                         0.01$
 1   Bootstrap resistor for photo resistor, 10k 0805                 `Tayda <tayda10_>`__                        0.01$
 1   Buffer cap for entire circuit, 4.7µ electrolytic 2.54mm leads   `Tayda <tayda11_>`__                        0.02$
-1   4pin terminal for bus/VCC connection                            `Conrad <conrad1_>`__                       0.63€
-1   5pin terminal for contact connection (GND/VCC/IO1-3)            `Conrad <conrad2_>`__                       0.79€
+1   4pin terminal for bus/VCC connection                            `Conrad <conrad1_>`__                       0.73$
+1   5pin terminal for contact connection (GND/VCC/IO1-3)            `Conrad <conrad2_>`__                       0.91$
 1   PCB <5*5cm                                                      `Seeedstudio <seeed1_>`__                   1.00$
-    **Total**                                                                                                   4.84$
+\   **Total**                                                                                                   5.06$
 ==  ==============================================================  ======================================  =========
 
 .. _tayda1:  http://www.taydaelectronics.com/ic-integrated-circuits/rs422-rs423-rs485/sn75176-sn75176bp-75176-buffers-line-drivers-ic.html
@@ -37,7 +39,7 @@ Indicator option 1: RGB LED
 1   RGB LED as status indicator                                     `Tayda <tayda5_>`__                         0.27$
 1   Cur. limit resistor for RGB LED, 0805, 150Ω (R)                 `Tayda <tayda12_>`__                        0.01$
 2   Cur. limit resistor for RGB LED, 0805, 100Ω (G/B)               `Tayda <tayda13_>`__                        0.01$
-    **Total**                                                                                                   0.30$
+\   **Total**                                                                                                   0.30$
 ==  ==============================================================  ======================================  =========
 
 .. _tayda5: http://www.taydaelectronics.com/leds/round-leds/5mm-leds/rgb-leds/rgb-led-5mm-common-cathode.html
@@ -57,7 +59,7 @@ Indicator option 2: Red 8*8 LED dot matrix (32*32mm)
 1   Transistor base resistor 0805 330K                              `Tayda <tayda18_>`__                        0.01$
 8   LED current limit resistors 0805 100Ω                           `Tayda <tayda19_>`__                        0.01$
 0   Alternative high current shift register                         `Digikey <digikey1_>`__                     1.51$
-    **Total**                                                                                                   2.40$
+\   **Total**                                                                                                   2.40$
 ==  ==============================================================  ======================================  =========
 
 .. _tayda14:  http://www.taydaelectronics.com/led-displays/dot-matrix/8x8-dot-matrix-led-display-red-3mm-common-cathode.html
@@ -75,16 +77,17 @@ Sensors
 #       What                                                            Sources                                 Price/ea.
 ======  ==============================================================  ======================================  =========
 1       Photoresistor                                                   `Tayda <tayda6_>`__                         0.24$
-1       Digital temperature sensor                                      `Tayda <tayda7_>`__                         1.75$
-0       Alternative analog temperature sensor LM335                     `Tayda <tayda20_>`__                        0.81$
-0       Alternative analog temperature sensor bias resistor                                                         0.01$
+0       Digital temperature sensor                                      `Tayda <tayda7_>`__                         1.75$
+0.5     Alternative analog temperature sensor LM335                     `Tayda <tayda20_>`__                        0.81$
+0.5     Alternative analog temperature sensor bias resistor                                                         0.01$
 1       PIR (motion sensor) module                                      `Aliexpress <aliex1_>`__                    1.01$
 0.3333  Optical particle sensor Sharp GP2Y1010AU0F                      `Aliexpress <aliex2_>`__                    6.28$
 0       Oxygen sensor Alphasense O2-A2 (1~2yr lifetime)                 `Aliexpress <aliex3_>`__                   51.84$
 0.3333  Oxygen sensor Envitec OOA101-1 (compatible; 3yr lifetime)       `Aliexpress <aliex4_>`__                    7.07$
+0.3333  Passives for oxygen sensor                                                                                  0.05$
 0.3333  3.5mm headphone plug for oxygen sensor                          `Tayda <tayda21_>`__                        0.16$
 0.5     Humidity sensor DHT22 (*replaces temp. sensor*)                 `Aliexpress <aliex5_>`__                    3.95$
-        **Total**                                                                                                   3.00$
+\       **Total**                                                                                                   8.16$
 ======  ==============================================================  ======================================  =========
 
 .. _tayda6:  http://www.taydaelectronics.com/sensors-transducer/optical-sensor/photo-conductive-cell-resistor-ldr-650nm-radial-ke-10720.html 
@@ -107,8 +110,8 @@ Loudness sensor? → Microphone+amp+envelope detector
 ==  ==============================================================  ======================================  =========
 1   Electret microphone                                             `Tayda <tayda8_>`__                         0.25$
 1   Dual Op-Amp                                                     `Tayda <tayda9_>`__                         0.11$
-\*  Passives (**TODO**)
-\   **Total**                                                                                                   0.34$
+\*  Passives (**TODO**)                                                                                         0.05$
+\   **Total**                                                                                                   0.41$
 ==  ==============================================================  ======================================  =========
 
 .. _tayda8:  http://www.taydaelectronics.com/microphones/condenser-microphone-2-2k-ohm-1-5v.html
@@ -118,4 +121,8 @@ Cabling
 -------
 We will use regular shielded ethernet cable. We will need a bunch of `splice boxes`_ to wire up cables going into dead ends.
 .. _`splice boxes`: http://www.amazon.de/Logilink-LogiLink-Junction-box-metallized/dp/B001UG98NI/ref=sr_1_1?ie=UTF8&qid=1393327646&sr=8-1&keywords=cat6+junction+box
+
+Grand total
+-----------
+14USD
 
