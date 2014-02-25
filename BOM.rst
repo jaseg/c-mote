@@ -73,23 +73,23 @@ Indicator option 2: Red 8*8 LED dot matrix (32*32mm)
 Sensors
 -------
 
-======  ==============================================================  ======================================  =========
-#       What                                                            Sources                                 Price/ea.
-======  ==============================================================  ======================================  =========
-1       Photoresistor                                                   `Tayda <tayda6_>`__                         0.24$
-0       Digital temperature sensor                                      `Tayda <tayda7_>`__                         1.75$
-0.5     Alternative analog temperature sensor LM335                     `Tayda <tayda20_>`__                        0.81$
-0.5     Alternative analog temperature sensor bias resistor                                                         0.01$
-1       PIR (motion sensor) module                                      `Aliexpress <aliex1_>`__                    1.01$
-0.3333  Optical particle sensor Sharp GP2Y1010AU0F w/ cable             `Aliexpress <aliex2_>`__                    6.40$
-0       Oxygen sensor Alphasense O2-A2 (1~2yr lifetime)                 `Aliexpress <aliex3_>`__                   51.84$
-0.3333  Oxygen sensor Envitec OOA101-1 (compatible; 3yr lifetime)       `Aliexpress <aliex4_>`__                    7.07$
-0.3333  Passives for oxygen sensor                                                                                  0.05$
-0.3333  3.5mm headphone plug for oxygen sensor                          `Tayda <tayda21_>`__                        0.16$
-0.5     Humidity sensor DHT22 (**replaces temp. sensor**)               `Aliexpress <aliex5_>`__                    3.95$
-0       Air pressure sensor BMP085                                      `Aliexpress <aliex6_>`__                    2.19$
-\       **Total**                                                                                                   8.28$
-======  ==============================================================  ======================================  =========
+======  ==============================================================  ==================================================  =========
+#       What                                                            Sources                                             Price/ea.
+======  ==============================================================  ==================================================  =========
+1       Photoresistor                                                   `Tayda <tayda6_>`__                                     0.24$
+0       Digital temperature sensor                                      `Tayda <tayda7_>`__                                     1.75$
+0.5     Alternative analog temperature sensor LM335                     `Tayda <tayda20_>`__                                    0.81$
+0.5     Alternative analog temperature sensor bias resistor                                                                     0.01$
+1       PIR (motion sensor) module                                      `Aliexpress <aliex1_>`__ `(Proto) <aliex7_>`__          1.01$
+0.3333  Optical particle sensor Sharp GP2Y1010AU0F w/ cable             `Aliexpress <aliex2_>`__ `(Proto) <aliex8_>`__          6.40$
+0       Oxygen sensor Alphasense O2-A2 (1~2yr lifetime)                 `Aliexpress <aliex3_>`__                               51.84$
+0.3333  Oxygen sensor Envitec OOA101-1 (compatible; 3yr lifetime)       `Aliexpress <aliex4_>`__ `(Proto) <aliex9_>`__          7.07$
+0.3333  Passives for oxygen sensor                                                                                              0.05$
+0.3333  3.5mm headphone plug for oxygen sensor                          `Tayda <tayda21_>`__                                    0.16$
+0.5     Humidity sensor DHT22 (**replaces temp. sensor**)               `Aliexpress <aliex5_>`__ `(Proto) <aliex10_>`__         3.95$
+0       Air pressure sensor BMP085                                      `Aliexpress <aliex6_>`__ `(Proto) <aliex11_>`__         2.19$
+\       **Total**                                                                                                               8.28$
+======  ==============================================================  ==================================================  =========
 
 .. _tayda6:  http://www.taydaelectronics.com/sensors-transducer/optical-sensor/photo-conductive-cell-resistor-ldr-650nm-radial-ke-10720.html 
 .. _tayda7:  http://www.taydaelectronics.com/ic-integrated-circuits/temperature-sensors/ds18b20-1-wire-digital-temperature-sensor-ic-dallas.html
@@ -101,6 +101,11 @@ Sensors
 .. _aliex4:  http://www.aliexpress.com/item/Envitec-oxygen-battery-oxygen-probe-ooa101-ooa101-1/1000408054.html
 .. _aliex5:  http://www.aliexpress.com/item/10PCS-LOT-DHT22-AM2302-Digital-Temperature-and-Humidity-Sensor-DHT22-Free-shiping/1514942254.html
 .. _aliex6:  http://www.aliexpress.com/item/Free-Shipping-10pcs-New-BMP085-Digital-Pressure-Sensor-module/1640086463.html
+.. _aliex7:  http://www.aliexpress.com/item/NEW-PIR-Sensor-Human-Body-detecting-module-Pyroelectric-HC-SR501-For-Arduino-MCU-Freeshipping/875391018.html
+.. _aliex8:  http://www.aliexpress.com/item/GP2Y1010AU0F-Compact-Optical-Dust-Sensor-Smoke-Particle-Sensor-With-Cable/1482509805.html
+.. _aliex9:  http://www.aliexpress.com/item/High-Quality-one-wire-Universal-Oxygen-Sensor-for-VW-Chevrolet-Daewoo-Opel-OE-No-0258986501-free/1118738460.html
+.. _aliex10: http://www.aliexpress.com/item/2pcs-DHT22-AM2302-SHT11-SHT15-Digital-Temperature-and-Humidity-Sensor-for-Ardunio-AVR-PIC-ARM-Raspberry/1628174960.html
+.. _aliex11: http://www.aliexpress.com/item/5PCS-LOT-GY-65-BMP085-Atmospheric-Pressure-Altimeter-Module-Free-Shipping/1540253073.html
 
 Loudness sensor subsystem
 -------------------------
