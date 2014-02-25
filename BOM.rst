@@ -81,13 +81,13 @@ Sensors
 0.5     Alternative analog temperature sensor LM335                     `Tayda <tayda20_>`__                        0.81$
 0.5     Alternative analog temperature sensor bias resistor                                                         0.01$
 1       PIR (motion sensor) module                                      `Aliexpress <aliex1_>`__                    1.01$
-0.3333  Optical particle sensor Sharp GP2Y1010AU0F                      `Aliexpress <aliex2_>`__                    6.28$
+0.3333  Optical particle sensor Sharp GP2Y1010AU0F w/ cable             `Aliexpress <aliex2_>`__                    6.40$
 0       Oxygen sensor Alphasense O2-A2 (1~2yr lifetime)                 `Aliexpress <aliex3_>`__                   51.84$
 0.3333  Oxygen sensor Envitec OOA101-1 (compatible; 3yr lifetime)       `Aliexpress <aliex4_>`__                    7.07$
 0.3333  Passives for oxygen sensor                                                                                  0.05$
 0.3333  3.5mm headphone plug for oxygen sensor                          `Tayda <tayda21_>`__                        0.16$
 0.5     Humidity sensor DHT22 (**replaces temp. sensor**)               `Aliexpress <aliex5_>`__                    3.95$
-\       **Total**                                                                                                   8.16$
+\       **Total**                                                                                                   8.28$
 ======  ==============================================================  ======================================  =========
 
 .. _tayda6:  http://www.taydaelectronics.com/sensors-transducer/optical-sensor/photo-conductive-cell-resistor-ldr-650nm-radial-ke-10720.html 
@@ -95,7 +95,7 @@ Sensors
 .. _tayda20: http://www.taydaelectronics.com/ic-integrated-circuits/temperature-sensors/lm335-precision-temperature-sensor-40c-to-100c-ic.html
 .. _tayda21: http://www.taydaelectronics.com/3-5mm-stereo-plug.html
 .. _aliex1:  http://www.aliexpress.com/item/Free-Shipping-HC-SR501-Adjust-Infrared-IR-Pyroelectric-Infrared-PIR-module-Motion-Sensor-Detector-Module-We/1564561530.html
-.. _aliex2:  http://www.aliexpress.com/item/5PCS-LOT-GP2Y1010AU0F-100-NEW-SHARP-Optical-Dust-Sensor-GP2Y10-FREE-SHIPPING-INCLUDING-WIRES/1342656048.html
+.. _aliex2:  http://www.aliexpress.com/item/2pcs-lot-GP2Y1010AU0F-100-NEW-SHARP-Optical-Dust-Sensor-GP2Y1010-free-shipping-add-cable/1670003835.html
 .. _aliex3:  http://www.aliexpress.com/item/UK-Alphasense-alpha-O2-A2-oxygen-sensor-O2-A2/1613147048.html
 .. _aliex4:  http://www.aliexpress.com/item/Envitec-oxygen-battery-oxygen-probe-ooa101-ooa101-1/1000408054.html
 .. _aliex5:  http://www.aliexpress.com/item/10PCS-LOT-DHT22-AM2302-Digital-Temperature-and-Humidity-Sensor-DHT22-Free-shiping/1514942254.html
