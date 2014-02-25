@@ -120,6 +120,7 @@ Loudness sensor? → Microphone+amp+envelope detector
 Cabling
 -------
 We will use regular shielded ethernet cable. We will need a bunch of `splice boxes`_ to wire up cables going into dead ends.
+
 .. _`splice boxes`: http://www.amazon.de/Logilink-LogiLink-Junction-box-metallized/dp/B001UG98NI/ref=sr_1_1?ie=UTF8&qid=1393327646&sr=8-1&keywords=cat6+junction+box
 
 Grand total
