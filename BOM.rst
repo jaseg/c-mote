@@ -90,7 +90,7 @@ Sensors
 1       Air pressure sensor BMP085                                      `Aliexpress <aliex6_>`__ `(Proto) <aliex11_>`__         2.19$
 1       NRF24L01 (2.4GHz transceiver as used in r0kets)                 `Aliexpress <aliex12_>`__                               0.85$
 0.3333  MQ214 Methane/Propane/Buthane sensor                            `Aliexpress <aliex13_>`__                               3.69$
-0.3333  MQ214 support components TODO
+0.3333  MQ214 load resistor 0805 43Ω                                    `Tayda <tayda22_>`__                                    0.01$
 \       **Total**                                                                                                              12.65$
 ======  ==============================================================  ==================================================  =========
 
@@ -98,6 +98,7 @@ Sensors
 .. _tayda7:  http://www.taydaelectronics.com/ic-integrated-circuits/temperature-sensors/ds18b20-1-wire-digital-temperature-sensor-ic-dallas.html
 .. _tayda20: http://www.taydaelectronics.com/ic-integrated-circuits/temperature-sensors/lm335-precision-temperature-sensor-40c-to-100c-ic.html
 .. _tayda21: http://www.taydaelectronics.com/3-5mm-stereo-plug.html
+.. _tayda22: http://www.taydaelectronics.com/resistors/smd-chip-resistors/0805/50-x-smd-chip-resistors-43-ohm-1-8w-1-0805.html
 .. _aliex1:  http://www.aliexpress.com/item/Free-Shipping-HC-SR501-Adjust-Infrared-IR-Pyroelectric-Infrared-PIR-module-Motion-Sensor-Detector-Module-We/1564561530.html
 .. _aliex2:  http://www.aliexpress.com/item/2pcs-lot-GP2Y1010AU0F-100-NEW-SHARP-Optical-Dust-Sensor-GP2Y1010-free-shipping-add-cable/1670003835.html
 .. _aliex3:  http://www.aliexpress.com/item/UK-Alphasense-alpha-O2-A2-oxygen-sensor-O2-A2/1613147048.html
