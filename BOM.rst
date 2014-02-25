@@ -89,7 +89,9 @@ Sensors
 0.5     Humidity sensor DHT22 (**replaces temp. sensor**)               `Aliexpress <aliex5_>`__ `(Proto) <aliex10_>`__         3.95$
 1       Air pressure sensor BMP085                                      `Aliexpress <aliex6_>`__ `(Proto) <aliex11_>`__         2.19$
 1       NRF24L01 (2.4GHz transceiver as used in r0kets)                 `Aliexpress <aliex12_>`__                               0.85$
-\       **Total**                                                                                                              11.32$
+0.3333  MQ214 Methane/Propane/Buthane sensor                            `Aliexpress <aliex13_>`__                               3.69$
+0.3333  MQ214 support components TODO
+\       **Total**                                                                                                              12.65$
 ======  ==============================================================  ==================================================  =========
 
 .. _tayda6:  http://www.taydaelectronics.com/sensors-transducer/optical-sensor/photo-conductive-cell-resistor-ldr-650nm-radial-ke-10720.html 
@@ -108,6 +110,7 @@ Sensors
 .. _aliex10: http://www.aliexpress.com/item/2pcs-DHT22-AM2302-SHT11-SHT15-Digital-Temperature-and-Humidity-Sensor-for-Ardunio-AVR-PIC-ARM-Raspberry/1628174960.html
 .. _aliex11: http://www.aliexpress.com/item/5PCS-LOT-GY-65-BMP085-Atmospheric-Pressure-Altimeter-Module-Free-Shipping/1540253073.html
 .. _aliex12: http://www.aliexpress.com/item/NRF24L01-wireless-data-transmission-module-2-4G-the-NRF24L01-20PCS-LOT-upgrade-version/603760995.html
+.. _aliex13: http://www.aliexpress.com/item/Mq214-methane-sensor/1398325808.html
 
 Loudness sensor subsystem
 -------------------------
@@ -134,5 +137,5 @@ We will use regular shielded ethernet cable. We will need a bunch of `splice box
 
 Grand total
 -----------
-17USD
+19USD
 
