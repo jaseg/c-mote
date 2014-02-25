@@ -10,6 +10,8 @@ We are planning the base board to be about 5*5cm. The heart of the system is an 
 
 All of the sensors are optional to allow greater flexibility.
 
+Some of the unused microcontroller IOs are routed to a 2*5 pin male 2.54mm pin header which serves as a connector for daughter boards. The first planned daughter board is a frontend for diffuse IR telemetry.
+
 Bus
 ---
 Most likely we will end up using regular CAT5e or better ethernet cable since that stuff is cheap and will probably do the job. Contrary to what one might expect after having a glance on the standard, RS-485 (TIA-485-A) actually is kind of picky concerning bus topologies. We plan on routing a long chain, avoiding any branches, by using two of the ethernet cable's twisted pairs for both directions into dead ends if necessary.
