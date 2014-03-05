@@ -32,7 +32,7 @@ ReportSuppressedErrorsInMessages=0
 OutputPath=
 
 [Document1]
-DocumentPath=..\..\..\..\Public\Documents\Altium\c-mote\c-mote.SchDoc
+DocumentPath=c-mote.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -48,7 +48,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [Document2]
-DocumentPath=..\..\..\..\Public\Documents\Altium\c-mote\auxcomp.SchLib
+DocumentPath=auxcomp.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
