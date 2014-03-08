@@ -3,20 +3,20 @@ BOM
 
 **Note:** In the following table, the brutto prices two conrad parts have been converted to USD for summation convenience.
 
-==  ==============================================================  ======================================  =========
-#   What                                                            Sources                                 Price/ea.
-==  ==============================================================  ======================================  =========
-1   RS485 driver SN75176BP                                          `Tayda <tayda1_>`__                         0.39$
-1   ATMega8 8-bit µC w/ nice peripheral selection and 5V operation  `Tayda <tayda2_>`__                         1.89$
-1   Crystal for good bus timing                                     `Tayda <tayda3_>`__                         0.10$
-1   Load caps for crystal oscillator, 22pF 0805 cer.                `Tayda <tayda4_>`__                         0.01$
-1   Bootstrap resistor for photo resistor, 10k 0805                 `Tayda <tayda10_>`__                        0.01$
-1   Buffer cap for entire circuit, 4.7µ electrolytic 2.54mm leads   `Tayda <tayda11_>`__                        0.02$
-1   4pin terminal for bus/VCC connection                            `Conrad <conrad1_>`__                       0.73$
-1   5pin terminal for contact connection (GND/VCC/IO1-3)            `Conrad <conrad2_>`__                       0.91$
-1   PCB <5*5cm                                                      `Seeedstudio <seeed1_>`__                   1.00$
-\   **Total**                                                                                                   5.06$
-==  ==============================================================  ======================================  =========
+==  ==============================================================  ==================================================  =========
+#   What                                                            Sources                                             Price/ea.
+==  ==============================================================  ==================================================  =========
+1   RS485 driver SN75176BP                                          `Tayda <tayda1_>`__                                     0.39$
+1   ATMega8 8-bit µC w/ nice peripheral selection and 5V operation  `Tayda <tayda2_>`__                                     1.89$
+1   Crystal for good bus timing                                     `Tayda <tayda3_>`__                                     0.10$
+1   Load caps for crystal oscillator, 22pF 0805 cer.                `Tayda <tayda4_>`__                                     0.01$
+1   Buffer cap for entire circuit, 4.7µ electrolytic 2.54mm leads   `Tayda <tayda11_>`__                                    0.02$
+1   4pin terminal for bus/VCC connection                            `Conrad <conrad1_>`__                                   0.73$
+1   5pin terminal for contact connection (GND/VCC/IO1-3)            `Conrad <conrad2_>`__                                   0.91$
+1   PCB <5*5cm                                                      `Seeedstudio <seeed1_>`__                               1.00$
+1   LDO 3.3V SOT223 TS1117                                          `Reichelt <reich1_>`__ `Aliexpress <aliex16_>`__        0.06$
+\   **Total**                                                                                                               5.05$
+==  ==============================================================  ==================================================  =========
 
 .. _tayda1:  http://www.taydaelectronics.com/ic-integrated-circuits/rs422-rs423-rs485/sn75176-sn75176bp-75176-buffers-line-drivers-ic.html
 .. _tayda2:  http://www.taydaelectronics.com/ic-integrated-circuits/microcontrollers/atmel-atmega8-16au-tqfp-32-avr-8-bit-microcontroller-ic.html
@@ -27,6 +27,8 @@ BOM
 .. _conrad1: http://www.conrad.de/ce/de/product/567658/Loetbare-Schraubklemme-mit-Liftprinzip-AKZ692-V-Rastermass-254-mm-Polzahl-4-Gruen-50692040021E-Inhalt-1-St?ref=list
 .. _conrad2: http://www.conrad.de/ce/de/product/567698/Loetbare-Schraubklemme-mit-Liftprinzip-AKZ692-V-Rastermass-254-mm-Polzahl-5-Gruen-50692050021E-Inhalt-1-St?ref=list
 .. _seeed1:  http://www.seeedstudio.com/service/index.php?r=site/pcbService
+.. _reich1:  https://secure.reichelt.de/TS-1117-BCW33/3/index.html?ACTION=3&LA=446&ARTICLE=115971&artnr=TS+1117+BCW33&SEARCH=1117
+.. _aliex16: http://www.aliexpress.com/item/Free-Shipping-100PCS-Original-AMS1117-3-3-AMS1117-3-3V-AMS1117-1117-3-3V-1A-Voltage/1149210196.html
 
 Remember to also throw in a couple of **termination resistors** for the system in accordance to your cable's impedance (e.g. 100Ω for ethernet cable).
 
@@ -77,6 +79,7 @@ Sensors
 #       What                                                            Sources                                             Price/ea.
 ======  ==============================================================  ==================================================  =========
 1       Photoresistor                                                   `Tayda <tayda6_>`__                                     0.24$
+1       Bootstrap resistor for photo resistor, 10k 0805                 `Tayda <tayda10_>`__                                    0.01$
 0       Digital temperature sensor                                      `Tayda <tayda7_>`__                                     1.75$
 0.5     Alternative analog temperature sensor LM335                     `Tayda <tayda20_>`__                                    0.81$
 0.5     Alternative analog temperature sensor bias resistor                                                                     0.01$
@@ -91,7 +94,10 @@ Sensors
 1       NRF24L01 (2.4GHz transceiver as used in r0kets)                 `Aliexpress <aliex12_>`__                               0.85$
 0.3333  MQ214 Methane/Propane/Buthane sensor                            `Aliexpress <aliex13_>`__                               3.69$
 0.3333  MQ214 load resistor 0805 43Ω                                    `Tayda <tayda22_>`__                                    0.01$
-\       **Total**                                                                                                              12.65$
+0       Piezo transducer                                                `Aliexpress <aliex14_>`__                               1.27$
+0       3.5mm mono headphone jack for piezo transducer                                                                          0.20$
+0       27mm piezo buzzer disc as force/vibration sensor                `Aliexpress <aliex15_>`__                               0.16$
+\       **Total**                                                                                                              12.66$
 ======  ==============================================================  ==================================================  =========
 
 .. _tayda6:  http://www.taydaelectronics.com/sensors-transducer/optical-sensor/photo-conductive-cell-resistor-ldr-650nm-radial-ke-10720.html 
@@ -107,11 +113,13 @@ Sensors
 .. _aliex6:  http://www.aliexpress.com/item/Free-Shipping-10pcs-New-BMP085-Digital-Pressure-Sensor-module/1640086463.html
 .. _aliex7:  http://www.aliexpress.com/item/NEW-PIR-Sensor-Human-Body-detecting-module-Pyroelectric-HC-SR501-For-Arduino-MCU-Freeshipping/875391018.html
 .. _aliex8:  http://www.aliexpress.com/item/GP2Y1010AU0F-Compact-Optical-Dust-Sensor-Smoke-Particle-Sensor-With-Cable/1482509805.html
-.. _aliex9:  http://www.aliexpress.com/item/High-Quality-one-wire-Universal-Oxygen-Sensor-for-VW-Chevrolet-Daewoo-Opel-OE-No-0258986501-free/1118738460.html
+.. _aliex9:  http://www.aliexpress.com/item/Hot-4-Wire-Universal-Oxygen-Sensor-Lambda-Sensor-Free-Shipping-0258986501/1464938927.html
 .. _aliex10: http://www.aliexpress.com/item/2pcs-DHT22-AM2302-SHT11-SHT15-Digital-Temperature-and-Humidity-Sensor-for-Ardunio-AVR-PIC-ARM-Raspberry/1628174960.html
 .. _aliex11: http://www.aliexpress.com/item/5PCS-LOT-GY-65-BMP085-Atmospheric-Pressure-Altimeter-Module-Free-Shipping/1540253073.html
 .. _aliex12: http://www.aliexpress.com/item/NRF24L01-wireless-data-transmission-module-2-4G-the-NRF24L01-20PCS-LOT-upgrade-version/603760995.html
 .. _aliex13: http://www.aliexpress.com/item/Mq214-methane-sensor/1398325808.html
+.. _aliex14: http://www.aliexpress.com/item/FREE-SHIPPING-30-Sensitive-New-Piezo-Under-saddle-Pickup-Transducer-Tuner-For-Ukulele/1402166893.html
+.. _aliex15: http://www.aliexpress.com/item/20pcs-27mm-Thickness-0-33mm-Piezo-Disc-for-Buzzer-Pressure-Sensor-Speaker-DIY/1371976951.html
 
 Loudness sensor subsystem
 -------------------------
