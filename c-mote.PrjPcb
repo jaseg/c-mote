@@ -29,7 +29,7 @@ PowerPortNamesTakePriority=0
 PushECOToAnnotationFile=1
 DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
-OutputPath=Project Outputs for c-mote
+OutputPath=
 
 [Document1]
 DocumentPath=c-mote.SchDoc
@@ -116,7 +116,7 @@ SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=0
 
 [Generic_EDE]
-OutputDir=Project Outputs for c-mote
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs
