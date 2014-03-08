@@ -12,6 +12,26 @@ All of the sensors are optional to allow greater flexibility.
 
 Some of the unused microcontroller IOs are routed to a 2*5 pin male 2.54mm pin header which serves as a connector for daughter boards. The first planned daughter board is a frontend for diffuse IR telemetry.
 
+Sensor auto-detection
+~~~~~~~~~~~~~~~~~~~~~
+
+The default firmware will include modules for all sensors. The available sensors will be probed on power-on. The following table summarizes the conditions under which each of the sensors will be considered absent.
+==================  ==============================  ======================================================
+Sensor              Considered absent, when...      Activate µC's internal pull-up for presence detection?
+==================  ==============================  ======================================================
+Analog temperature  U_in > 4.0V                     yes
+Light               U_in > 4.0V                     yes
+Oxygen              U_in > 4.0V                     yes
+Sound               U_in > 4.0V                     yes
+Methane             U_in > 4.0V                     yes
+Barometer           Probing via I2C fails
+Hygrometer          No response on bus
+NRF24L01            Probing via SPI fails
+Motion              See text below
+==================  ==============================  ======================================================
+
+The motion sensor's presence detection is a bit tricky. This sensor is considered absent when the input is a logical 0 and switches to a logical 1 after the µC's internal pull-up is activated. This procedure is using the fact that the AVR's internal pull-up is something below 50kΩ and the motion sensor's output impedance is something below 10kΩ. When the motion sensor is left unpopulated, a 200kΩ pull-down resistor is added instead.
+
 Bus
 ---
 Most likely we will end up using regular CAT5e or better ethernet cable since that stuff is cheap and will probably do the job. Contrary to what one might expect after having a glance on the standard, RS-485 (TIA-485-A) actually is kind of picky concerning bus topologies. We plan on routing a long chain, avoiding any branches, by using two of the ethernet cable's twisted pairs for both directions into dead ends if necessary.
@@ -22,6 +42,7 @@ Protocol
 The first iteration of the network will be based on cerebrum_, since basically everything we need is already implemented there. This network will consist of one dedicated, internet-connected bus master (some kind of linux system with an USB/RS-485 converter) running a cerebrum daemon collecting data and forwarding it to MQTT_ and Graphite_.
 
 The medium-term goal is to get the next-gen cerebrum protocol to work which is completely distributed and directly compatible to 6LoWPAN_. At this point, it would be sensible to implement MQTT_ directly on the motes using contiki_ for its 6LoWPAN stack.
+
 
 .. _Mote:       https://en.wikipedia.org/wiki/Motes
 .. _RS-485:     https://en.wikipedia.org/wiki/RS-485
