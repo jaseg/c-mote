@@ -16,6 +16,7 @@ Sensor auto-detection
 ~~~~~~~~~~~~~~~~~~~~~
 
 The default firmware will include modules for all sensors. The available sensors will be probed on power-on. The following table summarizes the conditions under which each of the sensors will be considered absent.
+
 ==================  ==============================  ======================================================
 Sensor              Considered absent, when...      Activate µC's internal pull-up for presence detection?
 ==================  ==============================  ======================================================

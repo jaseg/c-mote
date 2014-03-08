@@ -349,20 +349,58 @@ ul.auto-toc {
 <p>Some of the unused microcontroller IOs are routed to a 2*5 pin male 2.54mm pin header which serves as a connector for daughter boards. The first planned daughter board is a frontend for diffuse IR telemetry.</p>
 <div class="section" id="sensor-auto-detection">
 <h2>Sensor auto-detection</h2>
-<p>The default firmware will include modules for all sensors. The available sensors will be probed on power-on. The following table summarizes the conditions under which each of the sensors will be considered absent.
-==================  ==============================  ======================================================
-Sensor              Considered absent, when...      Activate µC's internal pull-up for presence detection?
-==================  ==============================  ======================================================
-Analog temperature  U_in &gt; 4.0V                     yes
-Light               U_in &gt; 4.0V                     yes
-Oxygen              U_in &gt; 4.0V                     yes
-Sound               U_in &gt; 4.0V                     yes
-Methane             U_in &gt; 4.0V                     yes
-Barometer           Probing via I2C fails
-Hygrometer          No response on bus
-NRF24L01            Probing via SPI fails
-Motion              See text below
-==================  ==============================  ======================================================</p>
+<p>The default firmware will include modules for all sensors. The available sensors will be probed on power-on. The following table summarizes the conditions under which each of the sensors will be considered absent.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="29%" />
+<col width="53%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Sensor</th>
+<th class="head">Considered absent, when...</th>
+<th class="head">Activate µC's internal pull-up for presence detection?</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Analog temperature</td>
+<td>U_in &gt; 4.0V</td>
+<td>yes</td>
+</tr>
+<tr><td>Light</td>
+<td>U_in &gt; 4.0V</td>
+<td>yes</td>
+</tr>
+<tr><td>Oxygen</td>
+<td>U_in &gt; 4.0V</td>
+<td>yes</td>
+</tr>
+<tr><td>Sound</td>
+<td>U_in &gt; 4.0V</td>
+<td>yes</td>
+</tr>
+<tr><td>Methane</td>
+<td>U_in &gt; 4.0V</td>
+<td>yes</td>
+</tr>
+<tr><td>Barometer</td>
+<td>Probing via I2C fails</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>Hygrometer</td>
+<td>No response on bus</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>NRF24L01</td>
+<td>Probing via SPI fails</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>Motion</td>
+<td>See text below</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
 <p>The motion sensor's presence detection is a bit tricky. This sensor is considered absent when the input is a logical 0 and switches to a logical 1 after the µC's internal pull-up is activated. This procedure is using the fact that the AVR's internal pull-up is something below 50kΩ and the motion sensor's output impedance is something below 10kΩ. When the motion sensor is left unpopulated, a 200kΩ pull-down resistor is added instead.</p>
 </div>
 </div>
