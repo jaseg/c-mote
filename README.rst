@@ -43,6 +43,9 @@ The first iteration of the network will be based on cerebrum_, since basically e
 
 The medium-term goal is to get the next-gen cerebrum protocol to work which is completely distributed and directly compatible to 6LoWPAN_. At this point, it would be sensible to implement MQTT_ directly on the motes using contiki_ for its 6LoWPAN stack.
 
+MAC address handling
+~~~~~~~~~~~~~~~~~~~~
+Cerebrum, and probably any successor to it, uses random 64-bit MAC adresses for auto-discovery. The current plan is to use a common firmware binary with sensor auto-detection on all nodes. Device-specific configuration, specifically device name, MAC and spatial coordinates should simply be stored in EEPROM. The chosen approach is to have all devices start with a build-specific, random MAC that is used until a proper, random MAC has been configured along with the device's name and coordinates. Thus, the devices can be added to the bus and configured one-by-one without requiring another compilation step.
 
 .. _Mote:       https://en.wikipedia.org/wiki/Motes
 .. _RS-485:     https://en.wikipedia.org/wiki/RS-485

@@ -374,6 +374,10 @@ Motion              See text below
 <h1>Protocol</h1>
 <p>The first iteration of the network will be based on <a class="reference external" href="https://github.com/jaseg/cerebrum">cerebrum</a>, since basically everything we need is already implemented there. This network will consist of one dedicated, internet-connected bus master (some kind of linux system with an USB/RS-485 converter) running a cerebrum daemon collecting data and forwarding it to <a class="reference external" href="https://en.wikipedia.org/wiki/MQ_Telemetry_Transport">MQTT</a> and <a class="reference external" href="https://github.com/graphite-project/graphite-web">Graphite</a>.</p>
 <p>The medium-term goal is to get the next-gen cerebrum protocol to work which is completely distributed and directly compatible to <a class="reference external" href="https://en.wikipedia.org/wiki/6LoWPAN">6LoWPAN</a>. At this point, it would be sensible to implement <a class="reference external" href="https://en.wikipedia.org/wiki/MQ_Telemetry_Transport">MQTT</a> directly on the motes using <a class="reference external" href="http://www.contiki-os.org/">contiki</a> for its 6LoWPAN stack.</p>
+<div class="section" id="mac-address-handling">
+<h2>MAC address handling</h2>
+<p>Cerebrum, and probably any successor to it, uses random 64-bit MAC adresses for auto-discovery. The current plan is to use a common firmware binary with sensor auto-detection on all nodes. Device-specific configuration, specifically device name, MAC and spatial coordinates should simply be stored in EEPROM. The chosen approach is to have all devices start with a build-specific, random MAC that is used until a proper, random MAC has been configured along with the device's name and coordinates. Thus, the devices can be added to the bus and configured one-by-one without requiring another compilation step.</p>
+</div>
 </div>
 </div>
 </body>
