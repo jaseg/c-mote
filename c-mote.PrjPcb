@@ -28,7 +28,7 @@ PowerPortNamesTakePriority=0
 PushECOToAnnotationFile=1
 DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
-OutputPath=Project Outputs for c-mote
+OutputPath=
 LogFolderPath=
 
 [Preferences]
@@ -69,6 +69,22 @@ GenerateClassCluster=0
 
 [Document3]
 DocumentPath=auxcomp.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+
+[Document4]
+DocumentPath=auxcomp.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -137,7 +153,7 @@ SaveSettingsToOutJob=0
 GlobalBookmarks=0
 
 [Generic_EDE]
-OutputDir=Project Outputs for c-mote
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs
