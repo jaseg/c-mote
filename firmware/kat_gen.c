@@ -160,8 +160,7 @@ int lookup_name(int index, char *buf){
 			name++;
 			if(name == index){
 				for(uint8_t i=0; i<len; i++){
-					decode(buf, p[i]);
-					buf += 3;
+					buf += decode(buf, p[i]);
 				}
 				*buf = 0;
 				return 1;

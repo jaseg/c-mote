@@ -35,11 +35,10 @@ print('Tree encoding')
 
 def plainlist(prefix, strings):
 	assert all(s.startswith(prefix) for s in strings)
-	reduced = [ encode(s[len(prefix):]) for s in strings if len(s) > len(prefix)]
-	l = { s[0] for s in reduced if len(s) == 1 }
+	l = { encode(s[len(prefix):])[0] for s in strings if len(s) == len(prefix)+1 }
 	#print('Generating suffix list: ', ' '.join(s[len(prefix):] for s in strings if len(s) > len(prefix)))
 	# make tuple from list so it can be added to a set
-	others = { tuple(s) for s in reduced if len(s) > 1 }
+	others = { tuple(encode(s)) for s in strings if len(s) > len(prefix)+1}
 	return l, others
 
 def subtree(prefix, strings):
@@ -137,15 +136,9 @@ for n in outliers:
 for l in range(2, max(buckets.keys())+1):
 	assert len(buckets[l]) != 0
 	encoded = list(sorted(buckets[l]))
-	for g,e in itertools.groupby(encoded, lambda s: s[:2]):
-		e = list(e)
-		if len(e)>4: # FIXME
-			assert type(g) is tuple
-			packed += [255] + list(g) + [x for l in e for x in l[2:]] + [0]
-		else:
-			packed += [x for l in e for x in l]
+	print('Packing length', l, [list(map(hex, l)) for l in encoded])
+	packed += [x for l in encoded for x in l]
 	packed.append(0)
-packed.append(0)
 
 assert all(c<256 for c in packed)
 print('Total length:', len(packed))
