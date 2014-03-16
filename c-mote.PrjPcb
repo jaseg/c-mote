@@ -99,6 +99,10 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for c-mote\Design Rule Check - c-mote.html
+DItemRevisionGUID=
+
 [SearchPath1]
 Path=AD13\AD10 Libraries\*.*
 IncludeSubFolders=1
