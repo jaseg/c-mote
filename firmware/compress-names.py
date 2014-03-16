@@ -35,9 +35,9 @@ print('Tree encoding')
 
 def plainlist(prefix, strings):
 	assert all(s.startswith(prefix) for s in strings)
-	reduced = [ encode(s[len(prefix):]) for s in strings ]
+	reduced = [ encode(s[len(prefix):]) for s in strings if len(s) > len(prefix)]
 	l = { s[0] for s in reduced if len(s) == 1 }
-	print('Generating suffix list: ', ' '.join(s[len(prefix):] for s in strings))
+	#print('Generating suffix list: ', ' '.join(s[len(prefix):] for s in strings if len(s) > len(prefix)))
 	# make tuple from list so it can be added to a set
 	others = { tuple(s) for s in reduced if len(s) > 1 }
 	return l, others
@@ -50,22 +50,30 @@ def subtree(prefix, strings):
 		if prefixed:
 			if prefix+k in prefixed:
 				if len(prefixed) == 1:
-					print("{} ({}) Subtree codepoint {} ({}): {}".format(prefix, kat.index(prefix), kat.index(k), k, 1))
+					#print("{} ({}) Subtree codepoint {} ({}): {}".format(prefix, kat.index(prefix), kat.index(k), k, 1))
 					treedata.append(1)
 				else:
-					print("{} ({}) Subtree codepoint {} ({}): {}".format(prefix, kat.index(prefix), kat.index(k), k, 3))
-					treedata.append(3)
+					#print("{} ({}) Subtree codepoint {} ({}): {}".format(prefix, kat.index(prefix), kat.index(k), k, 3))
 					l, o = plainlist(prefix+k, prefixed)
-					treedata.append(l)
+					if l:
+						treedata.append(3)
+						treedata.append(l)
+					else:
+						#print('***Empty suffix list***')
+						treedata.append(1)
 					outliers = outliers.union(o)
 			else:
-				print("{} ({}) Subtree codepoint {} ({}): {}".format(prefix, kat.index(prefix), kat.index(k), k, 2))
-				treedata.append(2)
+				#print("{} ({}) Subtree codepoint {} ({}): {}".format(prefix, kat.index(prefix), kat.index(k), k, 2))
 				l, o = plainlist(prefix+k, prefixed)
-				treedata.append(l)
+				if l:
+					treedata.append(2)
+					treedata.append(l)
+				else:
+					#print('***Empty suffix list***')
+					treedata.append(0)
 				outliers = outliers.union(o)
 		else:
-			print("{} ({}) Subtree codepoint {} ({}): {}".format(prefix, kat.index(prefix), kat.index(k), k, 0))
+			#print("{} ({}) Subtree codepoint {} ({}): {}".format(prefix, kat.index(prefix), kat.index(k), k, 0))
 			treedata.append(0)
 	return treedata, outliers
 
@@ -76,25 +84,26 @@ for k in kat[1:-1]: # A long vowel mark is never to be found at the beginning of
 	if prefixed:
 		if k in prefixed:
 			if len(prefixed) == 1:
-				print("Codepoint {} ({}): {}".format(kat.index(k), k, 1))
+				#print("Codepoint {} ({}): {}".format(kat.index(k), k, 1))
 				treedata.append(1)
 			else:
-				print("Codepoint {} ({}): {}".format(kat.index(k), k, 3))
+				#print("Codepoint {} ({}): {}".format(kat.index(k), k, 3))
 				treedata.append(3)
 				l, o = subtree(k, prefixed)
 				treedata += [None] + l + [None]
 				outliers = outliers.union(o)
 		else:
-			print("Codepoint {} ({}): {}".format(kat.index(k), k, 2))
+			#print("Codepoint {} ({}): {}".format(kat.index(k), k, 2))
 			treedata.append(2)
 			l, o = subtree(k, prefixed)
 			treedata += [None] +l + [None]
 			outliers = outliers.union(o)
 	else:
-		print("Codepoint {} ({}): {}".format(kat.index(k), k, 0))
+		#print("Codepoint {} ({}): {}".format(kat.index(k), k, 0))
 		treedata.append(0)
+	#print(treedata[-100:])
 
-print(treedata)
+#print(treedata)
 
 packed = []
 print("Packing digram table")
@@ -107,35 +116,6 @@ for g,e in itertools.groupby(digramtable, operator.itemgetter(0)):
 packed.append(0)
 
 print("Packing tree data, start index", len(packed))
-cons = 0
-cons_c = False
-bit = 0
-for data in treedata:
-	if type(data) is set:
-		assert all(type(e) is int for e in data)
-
-		if cons_c:
-			packed.append(cons)
-		cons = 0
-		cons_c = False
-		bit = 0
-
-		packed += list(data) + [0]
-	elif data is None:
-		if cons_c:
-			packed.append(cons)
-		cons = 0
-		cons_c = False
-		bit = 0
-	else:
-		assert data in range(4)
-		cons |= data << bit
-		cons_c = True
-		bit += 2
-		if bit == 8:
-			packed.append(cons)
-			cons = 0
-			bit = 0
 
 for t,d in itertools.groupby(treedata, type):
 	data = list(d)
@@ -144,7 +124,7 @@ for t,d in itertools.groupby(treedata, type):
 		packed += list(data[0]) + [0]
 	elif t is int:
 		data += [0]*(0,3,2,1)[len(data)%4]
-		for i in range(len(data), 4):
+		for i in range(0, len(data), 4):
 			packed.append(data[i+3]<<6 | data[i+2]<<4 | data[i+1]<<2 | data[i])
 	else:
 		assert t is type(None) and data == [None]
@@ -161,7 +141,7 @@ for l in range(2, max(buckets.keys())+1):
 		e = list(e)
 		if len(e)>4: # FIXME
 			assert type(g) is tuple
-			packed += [1] + list(g) + [x for l in e for x in l[2:]] + [2]
+			packed += [255] + list(g) + [x for l in e for x in l[2:]] + [0]
 		else:
 			packed += [x for l in e for x in l]
 	packed.append(0)
