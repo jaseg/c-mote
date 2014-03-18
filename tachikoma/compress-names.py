@@ -5,7 +5,14 @@ import operator
 import itertools
 import argparse
 
-names = [l.rstrip() for l in open('fgn-readings-katakana-normalized.sorted').readlines()]
+# Note about the word list:
+# This word list was generated from the enamdict file by first picking all female given names, converting them to
+# katakana and purging any ambiguous entries favoring writings with double vowels over those using the long vowel mark
+# (ー, chōonpu). This results in a list of names that although they would be pronounced (and thus converted to romaji)
+# properly are technically not entirely valid due to the incorrect use of double vowels/long vowel marks.
+# I could go back and fix this by replacing the appropriate hiragana double vowels prior to hiragana-katakana
+# conversion. I think, though, that the double-vowel version looks nicer so I'll leave it this way for now.
+names = [l.rstrip() for l in open('fgn-readings-katakana-normalized-purged.sorted').readlines()]
 # '#ァアィイゥウェエォオカガキギクグケゲコゴサザシジスズセゼソゾタダチヂッツヅテデトドナニヌネノハバパヒビピフブプヘベペホボポマミムメモャヤュ ユョヨラリルレロヮワヰヱヲンヴー'
 # Pad on the left for \0 terminator char
 kat = '#'+''.join(chr(i) for i in range(ord('ァ'), ord('ヴ')+1))+'ー'
